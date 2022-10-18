@@ -1,9 +1,9 @@
 package com.example.personalhealth.api.responses
 
-class DietListApiResponse(
+class RecipesListApiResponse(
     val id: Long,
     val name: String,
-    val nutrition: DietListResponse
+    val nutrition: RecipesListResponse
 )
 
 /*

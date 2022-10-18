@@ -1,16 +1,14 @@
-package com.example.personalhealth.ui.diet
+package com.example.personalhealth.ui.recipes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.personalhealth.Food
-import com.example.personalhealth.R
 import com.example.personalhealth.databinding.ActivityDietBinding
 
-class DietActivity : AppCompatActivity() {
+class RecipesActivity : AppCompatActivity() {
 
-    private val dietViewModel: DietViewModel by viewModels()
+    private val recipesViewModel: RecipesViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,10 +18,10 @@ class DietActivity : AppCompatActivity() {
         val recycler = binding.nutrientsRecycler
         recycler.layoutManager = LinearLayoutManager(this)
 
-        val adapter = DietAdapter()
+        val adapter = RecipesAdapter()
         recycler.adapter = adapter
 
-        dietViewModel.nutrientsList.observe(this) { nutrientsList ->
+        recipesViewModel.nutrientsList.observe(this) { nutrientsList ->
             adapter.submitList(nutrientsList)
         }
     }

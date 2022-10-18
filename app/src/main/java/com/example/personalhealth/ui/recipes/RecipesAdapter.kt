@@ -1,4 +1,4 @@
-package com.example.personalhealth.ui.diet
+package com.example.personalhealth.ui.recipes
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.personalhealth.Nutrients
 import com.example.personalhealth.databinding.NutrientsListItemBinding
 
-class DietAdapter: ListAdapter<Nutrients, DietAdapter.NutrientViewHolder>(DiffCallback) {
+class RecipesAdapter: ListAdapter<Nutrients, RecipesAdapter.NutrientViewHolder>(DiffCallback) {
 
     companion object DiffCallback : DiffUtil.ItemCallback<Nutrients>(){
         override fun areItemsTheSame(oldItem: Nutrients, newItem: Nutrients): Boolean {

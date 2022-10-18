@@ -29,7 +29,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.home.HomeActivity"
+            android:name=".ui.plan.PlanActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -50,7 +50,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.diet.DietActivity"
+            android:name=".ui.recipes.RecipesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,7 +62,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.exercises.ExerciseActivity"
+            android:name=".ui.progress.ProgressActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -76,7 +76,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.aboutus.AboutUsActivity"
+            android:name=".ui.search.SearchActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

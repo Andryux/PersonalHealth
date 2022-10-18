@@ -1,4 +1,4 @@
-package com.example.personalhealth.ui.diet
+package com.example.personalhealth.ui.recipes
 
 import com.example.personalhealth.Nutrients
 import com.example.personalhealth.api.DietsApi.retrofitService
@@ -6,7 +6,7 @@ import com.example.personalhealth.api.dto.NutrientsDTOMapper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class DietRepository {
+class RecipesRepository {
 
     suspend fun downloadNutrients(): List<Nutrients> {
         return withContext(Dispatchers.IO) {

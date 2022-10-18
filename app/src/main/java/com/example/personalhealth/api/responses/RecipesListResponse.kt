@@ -2,6 +2,6 @@ package com.example.personalhealth.api.responses
 
 import com.example.personalhealth.api.dto.NutrientsDTO
 
-class DietListResponse(
+class RecipesListResponse(
     val nutrients: List<NutrientsDTO>
 )
